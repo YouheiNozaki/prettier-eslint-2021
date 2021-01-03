@@ -15,7 +15,7 @@
     { "language": "typescript", "autoFix": true }
   ],
   "eslint.workingDirectories": [
-    { "directory": "./server", "changeProcessCWD": true }
+    { "directory": "./", "changeProcessCWD": true }
   ],
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
