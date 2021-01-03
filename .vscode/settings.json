@@ -12,10 +12,10 @@
   "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
-    { "language": "typescript", "autoFix": true },
+    { "language": "typescript", "autoFix": true }
   ],
   "eslint.workingDirectories": [
-    { "directory": "./", "changeProcessCWD": true }
+    { "directory": "./server", "changeProcessCWD": true }
   ],
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,

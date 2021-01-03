@@ -13,7 +13,9 @@
     "check-types": "tsc --noEmit",
     "eslint": "eslint src/**/*.ts",
     "eslint:fix": "eslint src/**/*.ts --fix",
-    "lint": "npm-run-all eslint check-types"
+    "format": "prettier --write 'src/**/*.{js,ts,json}'",
+    "lint": "npm-run-all eslint check-types",
+    "lint:fix": "npm-run-all eslint:fix check-types format"
   },
   "keywords": [],
   "author": "",
