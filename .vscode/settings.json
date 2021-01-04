@@ -1,26 +1,35 @@
 {
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "eslint.format.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "[graphql]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "editor.lineNumbers": "on",
@@ -30,7 +39,5 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "npm.packageManager": "yarn",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "prettier.packageManager": "yarn",
-  "prettier.requireConfig": true
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
