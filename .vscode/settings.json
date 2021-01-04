@@ -4,16 +4,11 @@
   },
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "editor.tokenColorCustomizations": {
-    "semanticHighlighting": true
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true
   },
   "editor.wordWrap": "on",
-  "eslint.enable": true,
   "eslint.packageManager": "yarn",
-  "eslint.validate": [
-    "javascript",
-    { "language": "typescript", "autoFix": true }
-  ],
   "eslint.workingDirectories": [
     { "directory": "./", "changeProcessCWD": true }
   ],
