@@ -15,7 +15,11 @@
     "eslint:fix": "eslint src/**/*.ts --fix",
     "format": "prettier --write 'src/**/*.{js,ts,json}'",
     "lint": "npm-run-all eslint check-types",
-    "lint:fix": "npm-run-all eslint:fix check-types format"
+    "lint:fix": "npm-run-all eslint:fix check-types format",
+    "docker:dev": "docker-compose up",
+    "docker:clean": "docker-compose down",
+    "docker:build": "docker build -t todoapp-server --build-arg NODE_ENV=production .",
+    "docker:start": "docker run -p 3000:3000 -d todoapp-server"
   },
   "keywords": [],
   "author": "",
