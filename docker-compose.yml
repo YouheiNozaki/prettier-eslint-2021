@@ -2,8 +2,22 @@ version: '3'
 services:
   web:
     build: .
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://user:pass@postgres:5432/db
+      # NODE_ENV: development
+      PORT: 3000
     volumes:
       - .:/usr/src/app
     ports:
       - 3000:3000
     command: yarn dev:watch
+  postgres:
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: todo-db
