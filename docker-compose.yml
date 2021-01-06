@@ -5,8 +5,8 @@ services:
     depends_on:
       - postgres
     environment:
-      DATABASE_URL: postgres://user:pass@postgres:5432/db
-      # NODE_ENV: development
+      DATABASE_URL: postgres://user:postgres@postgres:5432/todo-db
+      NODE_ENV: development
       PORT: 3000
     volumes:
       - .:/usr/src/app
@@ -16,7 +16,7 @@ services:
   postgres:
     image: postgres:latest
     ports:
-      - '5432:5432'
+      - '35432:5432'
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
